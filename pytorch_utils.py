@@ -6,7 +6,6 @@ import torch.nn.functional as F
 import matplotlib.pyplot as plt
 
 
-##### Changed
 class LR(nn.Module):
     def __init__(self, num_classes, feature_dims):
         super(LR, self).__init__()
@@ -16,20 +15,6 @@ class LR(nn.Module):
         # Assumes x of shape (N, x_dim)
         # return F.log_softmax(self.linear(x), dim=1)
         return self.linear(x)   # returns logits
-
-
-# class LR(nn.Module):
-#     def __init__(self, num_classes, feature_dims):
-#         super(LR, self).__init__()
-#         self.linear1 = nn.Linear(feature_dims, layerdims[0])
-#         self.linear2 = nn.Linear(layerdims[0], layerdims[1])
-#         self.linear3 = nn.Linear(layerdims[1], num_classes)
-
-#     def forward(self, x):
-#         # Assumes x of shape (N, x_dim)
-#         # return F.log_softmax(self.linear(x), dim=1)
-#         return self.linear3(self.linear2(self.linear1(x)))   # returns logits
-
 
 
 def convert_to_batches(X, Y, batch_size):
@@ -62,7 +47,6 @@ def plot_results(train_loss, val_loss):
     plt.show()
 
 #%%
-##### Changed
 def train(X_train, Y_train, query_data, query_label, batch_size=1024, epochs=200, learning_rate=0.08, return_model=False, layerdims=[]):
 
     #%%
@@ -78,8 +62,6 @@ def train(X_train, Y_train, query_data, query_label, batch_size=1024, epochs=200
 
     num_classes = Y_train.unique().size(0)
 
-    ##### Changed
-    # model = LR(num_classes, X_train.shape[-1], layerdims).to(X_train.device)
     model = LR(num_classes, X_train.shape[-1]).to(X_train.device)
 
     loss_function = nn.CrossEntropyLoss()
@@ -91,7 +73,6 @@ def train(X_train, Y_train, query_data, query_label, batch_size=1024, epochs=200
 
     for epoch in range(epochs):
         # mb_loss = 0
-
         for mini_batch in batches:
             X = mini_batch[0]
             Y = mini_batch[1]
