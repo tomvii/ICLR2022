@@ -34,7 +34,7 @@ Use the following script to replicate our results from the paper,
 
 ## Results
 
-|       	|          200 runs	        |          5000 runs            |
+|       	<td colspan=2>200 runs <td colspan=2>5000 runs
 | dataset      	| 1shot 	| 5shot 	| 1shot 	| 5shot 	|
 |--------------	|-------	|-------	|-------	|-------	|
 | miniImagenet 	|73.773 +- 2.401|       	|       	|       	|
