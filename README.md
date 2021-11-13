@@ -1,5 +1,8 @@
 # ICLR2022
 
+## Install requirements
+pip install --user torch==1.7.1+cu101 -f https://download.pytorch.org/whl/torch_stable.html
+
 ## Get the features
 You can train your own feature extractor following https://github.com/nupurkmr9/S2M2_fewshot
 
@@ -8,9 +11,6 @@ Or you can download miniImagenet, CUB extracted features from https://drive.goog
 Put the extracted features in ICLR2022/data/miniImagenet or ICLR2022/data/CUB directories
 
 Create a directory ICLR2022/logs to keep track of experiments
-
-## Install requirements
-pip install --user torch==1.7.1+cu101 -f https://download.pytorch.org/whl/torch_stable.html
 
 ## Train our proposed method
 Use the following script to replicate our results from the paper,
