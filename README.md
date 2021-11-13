@@ -31,3 +31,11 @@ Use the following script to replicate our results from the paper,
 5 way 5 shot
 ```python ICLR2022/evaluate_DC_optuna.py --n_shot 5 --n_ways 5 --dataset CUB --no_optuna --n_runs 5000 --print_iter 200 --m 2 --k 4 --alpha 5000 --alpha2 10 --beta 0.5 --use_dc_from_scaling_v4_cc5```
 
+
+## Results
+
+|       	|          200 runs	        |          5000 runs            |
+| dataset      	| 1shot 	| 5shot 	| 1shot 	| 5shot 	|
+|--------------	|-------	|-------	|-------	|-------	|
+| miniImagenet 	|73.773 +- 2.401|       	|       	|       	|
+| CUB          	|       	|       	|       	|       	|
