@@ -33,9 +33,7 @@ Use the following script to replicate our results from the paper,
 
 
 ## Results
-
-|       	<td colspan=2>200 runs <td colspan=2>5000 runs
-| dataset      	| 1shot 	| 5shot 	| 1shot 	| 5shot 	|
-|--------------	|-------	|-------	|-------	|-------	|
-| miniImagenet 	|73.773 +- 2.401|       	|       	|       	|
-| CUB          	|       	|       	|       	|       	|
+| dataset      	| 5way-1shot      	| 5way-5shot      	|
+|--------------	|-----------------	|-----------------	|
+| miniImagenet 	| 73.006 +- 0.501 	| 87.226 +- 0.331 	|
+| CUB          	| 84.574 +- 0.489 	| 93.466 +- 0.250 	|
