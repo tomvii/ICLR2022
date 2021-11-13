@@ -9,6 +9,9 @@ Put the extracted features in ICLR2022/data/miniImagenet or ICLR2022/data/CUB di
 
 Create a directory ICLR2022/logs to keep track of experiments
 
+## Install requirements
+pip install --user torch==1.7.1+cu101 -f https://download.pytorch.org/whl/torch_stable.html
+
 ## Train our proposed method
 Use the following script to replicate our results from the paper,
 
