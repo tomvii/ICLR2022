@@ -1,7 +1,11 @@
 # ICLR2022
 
-## Install requirements
+## Setup environment
+```conda create -n myenv python=3.6```
 
+```conda activate myenv```
+
+### Now install requirements
 ```pip install --user torch==1.7.1+cu101 -f https://download.pytorch.org/whl/torch_stable.html```
 
 If above command fails, run the following command,
