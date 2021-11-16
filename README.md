@@ -5,12 +5,15 @@
 
 ```conda activate myenv```
 
-### Now install requirements
+Get torch
+
 ```pip install --user torch==1.7.1+cu101 -f https://download.pytorch.org/whl/torch_stable.html```
 
-If above command fails, run the following command,
+If torch==1.7.1+cu101 fails, install torch==1.7.1 instead,
 
 ```pip install --user torch==1.7.1 -f https://download.pytorch.org/whl/torch_stable.html```
+
+Get remaining packages
 
 ```pip install optuna==2.10.0```
 
