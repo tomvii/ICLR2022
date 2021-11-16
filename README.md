@@ -1,10 +1,15 @@
 # ICLR2022
 
 ## Install requirements
+
 ```pip install --user torch==1.7.1+cu101 -f https://download.pytorch.org/whl/torch_stable.html```
+
 If above command fails, run the following command,
+
 ```pip install --user torch==1.7.1 -f https://download.pytorch.org/whl/torch_stable.html```
+
 ```pip install optuna==2.10.0```
+
 ```pip install matplotlib==3.3.4```
 
 
