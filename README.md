@@ -1,6 +1,6 @@
 # ICLR2022
 
-# Update 12/06/2021 : tieredImagenet Results
+## Update 12/06/2021 : tieredImagenet Results
 We trained a WRN-28-10 backbone on tieredImageNet dataset which contains 608 classes sampled from hierarchical categories. Each class belongs to one of 34 higher- level categories sampled from the high-level nodes in the ImageNet. We use 351, 97, and 160 classes for training, validation, and test, respectively. Before training, we downsampled the images to 32x32 due to resource constraints, because of which our accuracies are not directly comparable to the ones reported in DC paper (Yang et. al). Regardless, DC+ shows a consistent improvement over DC as expected.
 
 | Method      	  | 5way-1shot      	| 5way-5shot      	|
