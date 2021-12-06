@@ -8,6 +8,7 @@ We trained a WRN-28-10 backbone on tieredImageNet dataset which contains 608 cla
 | DC 	            | 66.899 +- 0.607 	| 84.074 +- 0.434 	|
 | DC+          	  | 69.350 +- 0.587 	| 85.236 +- 0.416	  |
 
+Shuo Yang, Lu Liu, and Min Xu. Free lunch for few-shot learning: Distribution calibration. In 9th International Conference on Learning Representations, ICLR 2021, Virtual Event, Austria, May 3-7, 2021. OpenReview.net, 2021. URL https://openreview.net/forum?id= JWOiYxMG92s
 
 ## Setup environment
 ```conda create -n myenv python=3.6```
