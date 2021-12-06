@@ -1,5 +1,14 @@
 # ICLR2022
 
+# Update 12/06/2021 : tieredImagenet Results
+We trained a WRN-28-10 backbone on tieredImageNet dataset which contains 608 classes sampled from hierarchical categories. Each class belongs to one of 34 higher- level categories sampled from the high-level nodes in the ImageNet. We use 351, 97, and 160 classes for training, validation, and test, respectively. Before training, we downsampled the images to 32x32 due to resource constraints, because of which our accuracies are not directly comparable to the ones reported in DC paper (Yang et. al). Regardless, DC+ shows a consistent improvement over DC as expected.
+
+| Method      	  | 5way-1shot      	| 5way-5shot      	|
+|--------------	  |-----------------	|-----------------	|
+| DC 	            | 66.899 +- 0.607 	| 84.074 +- 0.434 	|
+| DC+          	  | 69.350 +- 0.587 	| 85.236 +- 0.416	  |
+
+
 ## Setup environment
 ```conda create -n myenv python=3.6```
 
@@ -55,11 +64,4 @@ Use the following script to replicate our results from the paper,
 | miniImagenet 	| 73.006 +- 0.501 	| 87.226 +- 0.331 	|
 | CUB          	| 84.574 +- 0.489 	| 93.466 +- 0.250 	|
 
-# Update 12/06/2021 : tieredImagenet Results
-We trained a WRN-28-10 backbone on tieredImageNet dataset which contains 608 classes sampled from hierarchical categories. Each class belongs to one of 34 higher- level categories sampled from the high-level nodes in the ImageNet. We use 351, 97, and 160 classes for training, validation, and test, respectively. Before training, we downsampled the images to 32x32 due to resource constraints, because of which our accuracies are not directly comparable to the ones reported in DC paper (Yang et. al). Regardless, DC+ shows a consistent improvement over DC as expected.
-
-| Method      	  | 5way-1shot      	| 5way-5shot      	|
-|--------------	  |-----------------	|-----------------	|
-| DC 	            | 66.899 +- 0.607 	| 84.074 +- 0.434 	|
-| DC+          	  | 69.350 +- 0.587 	| 85.236 +- 0.416	  |
 
